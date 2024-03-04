@@ -1,0 +1,10 @@
+[
+    {
+        "port": 6388,
+        "file_folder": "./redis_1"
+    },
+    {
+        "port": 6389,
+        "file_folder": "./redis_2"
+    }
+]
