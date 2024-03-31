@@ -1,21 +1,33 @@
-[INFO] 2024-03-04 16:18:21,662, start: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
-[INFO] 2024-03-04 16:18:21,664, _on_writable: Socket connected: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33828), raddr=('127.0.0.1', 5672)>
-[INFO] 2024-03-04 16:18:21,664, _on_transport_establishment_done: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d9eb6c70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d9eb6c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
-[INFO] 2024-03-04 16:18:21,666, _report_completion_and_cleanup: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d9eb6c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-[INFO] 2024-03-04 16:18:21,666, _report_completion_and_cleanup: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d9eb6c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-[INFO] 2024-03-04 16:18:21,666, _create_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d9eb6c70> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-[INFO] 2024-03-04 16:18:21,666, __init__: Created channel=1
-[INFO] 2024-03-04 16:18:21,667, consume_with_rabbitmq: [SEARCH_SERVER] Ready to consume from queue pid_info
-[INFO] 2024-03-04 16:18:21,667, recieve_pids_callback: [SEARCH_SERVER] Recieved body: [31603, 31604]
-[INFO] 2024-03-04 16:18:21,668, run_server: [SEARCH_SERVER] Redis pids: [31603, 31604]
-[INFO] 2024-03-04 16:18:21,668, start: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
-[INFO] 2024-03-04 16:18:21,668, _on_writable: Socket connected: <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 33832), raddr=('127.0.0.1', 5672)>
-[INFO] 2024-03-04 16:18:21,669, _on_transport_establishment_done: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d96735b0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d96735b0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
-[INFO] 2024-03-04 16:18:21,670, _report_completion_and_cleanup: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d96735b0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-[INFO] 2024-03-04 16:18:21,670, _report_completion_and_cleanup: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d96735b0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-[INFO] 2024-03-04 16:18:21,670, _create_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fb5d96735b0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
-[INFO] 2024-03-04 16:18:21,670, __init__: Created channel=1
-[INFO] 2024-03-04 16:18:21,671, consume_with_rabbitmq: [SEARCH_SERVER] Ready to consume from queue server_client_interaction
-[INFO] 2024-03-04 16:18:31,917, process_client_request_callback: [SEARCH_SERVER] Recieved body: {"exit": true}
-[INFO] 2024-03-04 16:18:31,918, process_client_request_callback: [SEARCH_SERVER] Key_map for request: {'exit': True}
-[INFO] 2024-03-04 16:18:31,918, process_client_request_callback: [SEARCH_SERVER] Stopping the server...
+[INFO] 2024-03-05 13:44:00,251, start: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+[INFO] 2024-03-05 13:44:00,251, _on_writable: Socket connected: <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58520), raddr=('127.0.0.1', 5672)>
+[INFO] 2024-03-05 13:44:00,252, _on_transport_establishment_done: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaaa47cc10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaaa47cc10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+[INFO] 2024-03-05 13:44:00,254, _report_completion_and_cleanup: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaaa47cc10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+[INFO] 2024-03-05 13:44:00,254, _report_completion_and_cleanup: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaaa47cc10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+[INFO] 2024-03-05 13:44:00,254, _create_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaaa47cc10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+[INFO] 2024-03-05 13:44:00,254, __init__: Created channel=1
+[INFO] 2024-03-05 13:44:00,256, consume_with_rabbitmq: [SEARCH_SERVER] Ready to consume from queue pid_info
+[INFO] 2024-03-05 13:44:00,256, recieve_pids_callback: [SEARCH_SERVER] Recieved body: [2928, 2929]
+[INFO] 2024-03-05 13:44:00,256, run_server: [SEARCH_SERVER] Redis pids: [2928, 2929]
+[INFO] 2024-03-05 13:44:00,257, start: Pika version 1.3.2 connecting to ('127.0.0.1', 5672)
+[INFO] 2024-03-05 13:44:00,257, _on_writable: Socket connected: <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 58532), raddr=('127.0.0.1', 5672)>
+[INFO] 2024-03-05 13:44:00,257, _on_transport_establishment_done: Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaa9c38550>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaa9c38550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+[INFO] 2024-03-05 13:44:00,259, _report_completion_and_cleanup: AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaa9c38550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+[INFO] 2024-03-05 13:44:00,259, _report_completion_and_cleanup: AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaa9c38550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+[INFO] 2024-03-05 13:44:00,259, _create_connection: Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fbaa9c38550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+[INFO] 2024-03-05 13:44:00,259, __init__: Created channel=1
+[INFO] 2024-03-05 13:44:00,261, consume_with_rabbitmq: [SEARCH_SERVER] Ready to consume from queue server_client_interaction
+[INFO] 2024-03-05 13:44:50,839, process_client_request_callback: [SEARCH_SERVER] Recieved body: {"colour": "black"}
+[INFO] 2024-03-05 13:44:50,840, process_client_request_callback: [SEARCH_SERVER] Key_map for request: {'colour': 'black'}
+[INFO] 2024-03-05 13:44:50,844, process_client_request_callback: Images to load: ['./redis_1/mercedes_black_2.jpeg', './redis_1/renault_black_2.jpeg', './redis_1/mercedes_black_1.jpg', './redis_2/renault_black_1.jpeg']
+[INFO] 2024-03-05 13:45:20,506, process_client_request_callback: [SEARCH_SERVER] Recieved body: {"colour": "white"}
+[INFO] 2024-03-05 13:45:20,506, process_client_request_callback: [SEARCH_SERVER] Key_map for request: {'colour': 'white'}
+[INFO] 2024-03-05 13:45:20,508, process_client_request_callback: Images to load: ['./redis_1/mercedes_white_3.jpeg', './redis_1/renault_white_1.jpg', './redis_2/mercedes_white_1.jpg', './redis_2/renault_white_2.jpeg', './redis_2/renault_white_3.jpeg', './redis_2/mercedes_white_2.jpeg']
+[INFO] 2024-03-05 13:45:51,496, process_client_request_callback: [SEARCH_SERVER] Recieved body: {"brand": "mercedes"}
+[INFO] 2024-03-05 13:45:51,496, process_client_request_callback: [SEARCH_SERVER] Key_map for request: {'brand': 'mercedes'}
+[INFO] 2024-03-05 13:45:51,498, process_client_request_callback: Images to load: ['./redis_1/mercedes_white_3.jpeg', './redis_1/mercedes_black_2.jpeg', './redis_1/mercedes_black_1.jpg', './redis_2/mercedes_white_1.jpg', './redis_2/mercedes_white_2.jpeg']
+[INFO] 2024-03-05 13:46:16,473, process_client_request_callback: [SEARCH_SERVER] Recieved body: {"brand": "renault"}
+[INFO] 2024-03-05 13:46:16,473, process_client_request_callback: [SEARCH_SERVER] Key_map for request: {'brand': 'renault'}
+[INFO] 2024-03-05 13:46:16,475, process_client_request_callback: Images to load: ['./redis_1/renault_white_1.jpg', './redis_1/renault_black_2.jpeg', './redis_2/renault_black_1.jpeg', './redis_2/renault_white_2.jpeg', './redis_2/renault_white_3.jpeg']
+[INFO] 2024-03-05 13:46:31,002, process_client_request_callback: [SEARCH_SERVER] Recieved body: {"exit": true}
+[INFO] 2024-03-05 13:46:31,002, process_client_request_callback: [SEARCH_SERVER] Key_map for request: {'exit': True}
+[INFO] 2024-03-05 13:46:31,002, process_client_request_callback: [SEARCH_SERVER] Stopping the server...
