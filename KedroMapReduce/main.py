@@ -2,8 +2,11 @@ from kedro.pipeline import Pipeline, node
 from kedro.runner import SequentialRunner
 from kedro.io import MemoryDataset, DataCatalog
 
+from glob import glob
 import json
 import nltk
+import re
+import string
 
 
 # nltk.download('punkt')
@@ -44,13 +47,19 @@ def reduce_words(map_node1: dict[str, int], map_node2: dict[str, int], map_node3
     return most_common_words
 
 def main():
-    with open('text.txt', 'r') as f:
-        words = ''.join(f.readlines()).strip().split()
-        l = len(words)
-        raw_text1 = ' '.join(words[:l//4])
-        raw_text2 = ' '.join(words[l//4:l//2])
-        raw_text3 = ' '.join(words[l//2:3*l//4])
-        raw_text4 = ' '.join(words[3*l//4:])
+    files = sorted(glob('corpus/*'))
+    all_text = ''
+    for file in files:
+        with open(file, 'r') as f:
+            all_text += ' '
+            all_text += ''.join(f.readlines()).strip()
+    all_text = re.sub(f'[{string.punctuation}]', ' ', all_text)
+    words = all_text.split()
+    l = len(words)
+    raw_text1 = ' '.join(words[:l//4])
+    raw_text2 = ' '.join(words[l//4:l//2])
+    raw_text3 = ' '.join(words[l//2:3*l//4])
+    raw_text4 = ' '.join(words[3*l//4:])
         
     data_catalog = DataCatalog({
         'data1': MemoryDataset(raw_text1),
